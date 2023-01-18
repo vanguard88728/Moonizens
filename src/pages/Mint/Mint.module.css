@@ -1,0 +1,8 @@
+* {
+    font-family: 'Sunset', sans-serif;
+}
+
+.messageBox {
+    border: 1px solid #FEFEFE;
+    padding: 16px 20px;
+}

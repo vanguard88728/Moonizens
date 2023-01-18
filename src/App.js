@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "@mui/material";
+
+import useCustomTheme from "./hooks/useCustomTheme";
+import Layout from "./layout/Layout";
+import Footer from "./components/Footer/Footer";
+import Mint from "./pages/Mint/Mint";
 import './App.css';
 
+
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+  const { customTheme } = useCustomTheme(darkMode);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={customTheme}>
+      <div
+        style={{
+          backgroundColor: `${darkMode ? "#040404" : "#ffffff"}`,
+          height: "100vh",
+        }}
+      >
+        <BrowserRouter>
+          <Layout darkMode={darkMode}>
+            <Routes>
+              <Route path="/" element={<Mint darkMode={darkMode} />} />
+              <Route path="/mint" element={<Mint darkMode={darkMode} />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   );
 }
 
