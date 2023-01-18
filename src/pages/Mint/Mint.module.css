@@ -87,6 +87,58 @@
     font-family: Inter, sans-serif;
 }
 
+.submitButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #FEFEFE;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: all 1s;
+    box-shadow: 4px 4px 2px 0 rgb(249 66 103)
+}
+
+.submitButton:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    border-top: 20px solid black;
+    border-right: 20px solid transparent;
+    z-index: 99;
+}
+
+.submitButtonCaption {
+    font-family: 'Sunset', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 8px 0;
+    padding-left: 15px;
+}
+
+.submitButton:hover {
+    box-shadow: none;
+    background: linear-gradient(0deg, #F94139, #F944A8);
+}
+
+.submitButton:hover .submitButtonCaption {
+    color: #FEFEFE;
+}
+
+.submitButton:hover img {
+    filter: brightness(0%) invert(100%);
+}
+
 .content {
     background-image: url("../../assets/images/background.png");
     background-size: cover;

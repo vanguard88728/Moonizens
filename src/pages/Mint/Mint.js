@@ -7,6 +7,7 @@ import Holder from '../../assets/images/holder.png';
 import Star from '../../assets/images/star.png';
 import Sticker1 from '../../assets/images/sticker1.png';
 import Sticker2 from '../../assets/images/sticker2.png';
+import World from '../../assets/images/world.svg';
 import styles from './Mint.module.css';
 
 
@@ -51,16 +52,24 @@ const Mint = ({ darkMode }) => {
                   <Typography className={styles.itemLabel}>SubTotal</Typography>
                   <Typography className={styles.itemValue}>$280.00</Typography>
                 </Stack>
+
                 <Stack direction='row' justifyContent='space-between'>
                   <Typography className={styles.itemLabel}>Gas Fee</Typography>
                   <Typography className={styles.itemValue}>$20.00</Typography>
                 </Stack>
+
                 <Stack direction='row' justifyContent='space-between'>
                   <Typography className={styles.itemLabel}>Total</Typography>
                   <Typography className={styles.itemValue}>$300.00</Typography>
                 </Stack>
+
+                <Box className={styles.submitButton}>
+                  <img src={World} alt='world' />
+                  <span className={styles.submitButtonCaption}>
+                    Mint
+                  </span>
+                </Box>
               </Stack>
-              <p>1111</p>
             </Box>
           </Stack>
 
