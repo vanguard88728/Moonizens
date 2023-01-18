@@ -1,8 +1,154 @@
-* {
+.container {
+    height: calc(100vh - 57px);
+}
+
+.root {
+    height: calc(100vh - 125px);
+}
+
+.leftPanel {
+    display: flex;
+    border-left: 1px solid #FEFEFE;
+    border-right: 1px solid #FEFEFE;
+    position: relative;
+}
+
+.sticker {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: all 3s;
+    right: -50px;
+    top: 70px
+}
+
+.sticker .mobile {
+
+}
+
+.orderContainer {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.orderContainer .itemCaption {
+    color: #FEFEFE;
     font-family: 'Sunset', sans-serif;
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.orderContainer .itemIcon {
+    width: 50px;
+}
+
+.orderContainer .itemTitle {
+    color: #FEFEFE;
+    font-family: 'Sunset', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.orderContainer .itemSubtitle {
+    color: #FEFEFE;
+    font-family: Inter, sans-serif;
+}
+
+.orderLabel {
+    padding: 10px 40px;
+    border-top: 1px solid #FEFEFE;
+    border-bottom: 1px solid #FEFEFE;
+}
+
+.orderLabel .label {
+    color: #FEFEFE;
+    font-family: 'Sunset', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.orderDetail {
+    padding: 40px
+}
+
+.itemLabel {
+    color: #FEFEFE;
+    font-family: 'Sunset', sans-serif;
+    text-transform: uppercase;
+}
+
+.itemValue {
+    color: #FEFEFE;
+    font-family: Inter, sans-serif;
+}
+
+.content {
+    background-image: url("../../assets/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #FEFEFE;
+}
+
+.holder {
+    animation: move 5s linear infinite;
+    width: 400px;
 }
 
 .messageBox {
     border: 1px solid #FEFEFE;
     padding: 16px 20px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.marquee {
+    color: white;
+    font-family: 'Sunset', sans-serif;
+    font-size: 32px;
+    letter-spacing: -0.2px;
+    line-height: 32px;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: marquee 30s linear infinite;
+    width: 100%;
+}
+
+
+.marquee2 {
+    animation-delay: 15s;
+    left: 100%;
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

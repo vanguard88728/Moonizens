@@ -14,6 +14,7 @@ const Navigation = ({ darkMode }) => {
       style={{
         border: '1px solid #FEFEFE',
         position: "relative",
+        height: 55,
       }}
     >
       {t("NAV_CONNECT_WALLET")}
