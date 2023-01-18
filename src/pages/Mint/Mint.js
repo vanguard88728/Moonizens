@@ -20,11 +20,11 @@ const Mint = ({ darkMode }) => {
     <Box className={styles.container}>
       <Grid
         container
-        direction={isMobile ? 'column' : 'row'}
+        direction={isMobile ? 'column-reverse' : 'row'}
         className={styles.root}
       >
-        <Grid item md='auto' className={styles.leftPanel}>
-          <Stack sx={{ width: isMobile ? 'auto' : 400 }}>
+        <Grid item sm={12} md='auto' className={styles.leftPanel}>
+          <Stack sx={{ width: isMobile ? '100%' : 400 }}>
             <Box className={styles.orderContainer}>
               <Typography className={styles.itemCaption}>MINT 1 NFT</Typography>
               <Stack direction='row' spacing={3}>
@@ -73,13 +73,13 @@ const Mint = ({ darkMode }) => {
             </Box>
           </Stack>
 
-          <img src={sticker} className={styles.sticker}
+          <img src={sticker} className={clsx(styles.sticker, {mobile: isMobile})}
                onMouseOver={() => setSticker(Sticker2)}
                onMouseOut={() => setSticker(Sticker1)}
           />
         </Grid>
 
-        <Grid item xs={12} md
+        <Grid item sm={12} md
               className={styles.content}
         >
           <img src={Holder} alt='holder' className={styles.holder} />
@@ -87,22 +87,41 @@ const Mint = ({ darkMode }) => {
       </Grid>
 
       <Box className={styles.messageBox}>
-        <Typography className={styles.marquee}>
-          <span>THE WEB3 TEAM OF MIAMI</span>
-          <img src={Star} alt='star' />
-          <span>THE WEB3 TEAM OF MIAMI</span>
-          <img src={Star} alt='star' />
-          <span>THE WEB3 TEAM OF MIAMI</span>
-          <img src={Star} alt='star' />
-        </Typography>
-        <Typography className={clsx(styles.marquee, styles.marquee2)}>
-          <span>THE WEB3 TEAM OF MIAMI</span>
-          <img src={Star} alt='star' />
-          <span>THE WEB3 TEAM OF MIAMI</span>
-          <img src={Star} alt='star' />
-          <span>THE WEB3 TEAM OF MIAMI</span>
-          <img src={Star} alt='star' />
-        </Typography>
+        <Box className={styles.marquee}>
+          <Box className={styles.marqueeContent}>
+            <Box className={styles.marqueeItem}>
+              <span>THE WEB3 TEAM OF MIAMI</span>
+              <img src={Star} alt='star' />
+            </Box>
+
+            <Box className={styles.marqueeItem}>
+              <span>THE WEB3 TEAM OF MIAMI</span>
+              <img src={Star} alt='star' />
+            </Box>
+
+            <Box className={styles.marqueeItem}>
+              <span>THE WEB3 TEAM OF MIAMI</span>
+              <img src={Star} alt='star' />
+            </Box>
+          </Box>
+
+          <Box className={styles.marqueeContent}>
+            <Box className={styles.marqueeItem}>
+              <span>THE WEB3 TEAM OF MIAMI</span>
+              <img src={Star} alt='star' />
+            </Box>
+
+            <Box className={styles.marqueeItem}>
+              <span>THE WEB3 TEAM OF MIAMI</span>
+              <img src={Star} alt='star' />
+            </Box>
+
+            <Box className={styles.marqueeItem}>
+              <span>THE WEB3 TEAM OF MIAMI</span>
+              <img src={Star} alt='star' />
+            </Box>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
