@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { Box, useMediaQuery } from "@mui/material";
+import { Stack, Box, useMediaQuery, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@emotion/react";
+
+import styles from './Navigation.module.css';
+import Logo from '../../assets/images/logo.svg';
 
 
 const Navigation = ({ darkMode }) => {
@@ -10,15 +13,26 @@ const Navigation = ({ darkMode }) => {
   const { t } = useTranslation();
 
   return (
-    <Box
+    <Stack
       style={{
         border: '1px solid #FEFEFE',
         position: "relative",
         height: 55,
       }}
+      direction='row'
+      alignItems='center'
+      justifyContent='space-between'
     >
-      {t("NAV_CONNECT_WALLET")}
-    </Box>
+      <Box className={styles.logoWrapper}>
+        <img src={Logo} alt='logo' />
+      </Box>
+
+      <Box className={styles.buttonWrapper}>
+        <Typography className={styles.buttonCaption}>
+          Connect Wallet
+        </Typography>
+      </Box>
+    </Stack>
   );
 };
 

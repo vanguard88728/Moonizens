@@ -1,0 +1,47 @@
+.logoWrapper {
+    border-right: 1px solid #FEFEFE;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    width: 360px;
+}
+
+.logoWrapper img {
+    transition: all 1s;
+}
+
+.logoWrapper img:hover {
+    filter: brightness(0%) invert(100%);
+}
+
+.buttonWrapper {
+    border-left: 1px solid #FEFEFE;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    width: 360px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.buttonWrapper:hover {
+    background: #FEFEFE;
+    clip-path: polygon(20px 0%, 100% 0, 100% 100%, 0% 100%, 0 20px);
+}
+
+.buttonCaption {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Sunset', sans-serif;
+    font-size: 24px;
+}
+
+.buttonWrapper:hover .buttonCaption {
+    color: black;
+}
