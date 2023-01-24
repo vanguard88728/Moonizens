@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { useTheme } from "@emotion/react";
 
 import styles from './Navigation.module.css';
-import Logo from '../../assets/images/logo.svg';
 
 
 const Navigation = ({ darkMode }) => {
@@ -24,7 +23,6 @@ const Navigation = ({ darkMode }) => {
       justifyContent='space-between'
     >
       <Box className={styles.logoWrapper}>
-        <img src={Logo} alt='logo' />
       </Box>
 
       <Box className={styles.buttonWrapper}>

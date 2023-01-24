@@ -5,7 +5,7 @@ import {StyledEngineProvider, ThemeProvider} from "@mui/material";
 import useCustomTheme from "./hooks/useCustomTheme";
 import Layout from "./layout/Layout";
 import Footer from "./components/Footer/Footer";
-import Mint from "./pages/Mint/Mint";
+import Home from "./pages/Home/Home";
 import './App.css';
 
 
@@ -25,8 +25,8 @@ function App() {
           <BrowserRouter>
             <Layout darkMode={darkMode}>
               <Routes>
-                <Route path="/" element={<Mint darkMode={darkMode} />} />
-                <Route path="/mint" element={<Mint darkMode={darkMode} />} />
+                <Route path="/" element={<Home darkMode={darkMode} />} />
+                <Route path="/mint" element={<Home darkMode={darkMode} />} />
               </Routes>
             </Layout>
           </BrowserRouter>

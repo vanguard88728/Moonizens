@@ -25,7 +25,7 @@ const useCustomTheme = (darkMode) => {
             },
           },
           typography: {
-            fontFamily: "'Poppins', sans-serif",
+            fontFamily: "'Jura', sans-serif",
             fontWeightRegular: 400,
             fontWeightMedium: 500,
             fontWeightBold: 700,
@@ -56,7 +56,7 @@ const useCustomTheme = (darkMode) => {
             },
           },
           typography: {
-            fontFamily: "'Poppins', sans-serif",
+            fontFamily: "'Jura', sans-serif",
             fontWeightRegular: 400,
             fontWeightMedium: 500,
             fontWeightBold: 700,
