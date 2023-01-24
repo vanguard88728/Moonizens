@@ -2,23 +2,19 @@ import React from "react";
 import { Box, useMediaQuery } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/Footer/Footer";
 
-const Layout = ({ children, darkMode }) => {
+const Layout = ({ children }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>
-      <Navigation darkMode={darkMode} />
-      <Box
-        sx={
-          darkMode
-            ? { backgroundColor: "#040404"}
-            : { backgroundColor: "#ffffff" }
-        }
-      >
+      <Navigation />
+      <Box>
           {children}
       </Box>
+      <Footer />
     </>
   );
 };

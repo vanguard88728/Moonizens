@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {StyledEngineProvider, ThemeProvider} from "@mui/material";
+import { CssBaseline, StyledEngineProvider, ThemeProvider } from "@mui/material";
 
 import useCustomTheme from "./hooks/useCustomTheme";
 import Layout from "./layout/Layout";
-import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
+import FAQ from "./pages/FAQ/Faq";
 import './App.css';
 
 
@@ -15,22 +15,16 @@ function App() {
 
   return (
     <StyledEngineProvider injectFirst>
+      <CssBaseline />
       <ThemeProvider theme={customTheme}>
-        <div
-          style={{
-            backgroundColor: `${darkMode ? "#040404" : "#ffffff"}`,
-            height: "100vh",
-          }}
-        >
           <BrowserRouter>
-            <Layout darkMode={darkMode}>
+            <Layout>
               <Routes>
-                <Route path="/" element={<Home darkMode={darkMode} />} />
-                <Route path="/mint" element={<Home darkMode={darkMode} />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/faq" element={<FAQ />} />
               </Routes>
             </Layout>
           </BrowserRouter>
-        </div>
       </ThemeProvider>
     </StyledEngineProvider>
   );

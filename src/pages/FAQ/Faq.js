@@ -1,19 +1,20 @@
 import React, { useState } from "react";
-import { Stack, Box, useMediaQuery, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@emotion/react";
+import clsx from "clsx";
 
-import styles from './Navigation.module.css';
+import styles from './Faq.module.css';
 
 
-const Navigation = () => {
+const FAQ = ({ darkMode }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Box>
-      App Header
+      Hello FAQ Page!!!
     </Box>
   );
 };
 
-export default Navigation;
+export default FAQ;
