@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Grid, Link, Stack, Typography } from '@mui/material';
-import { Link as RouteLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import styles from './Footer.module.css';
 import Logo from '../../assets/images/logo-p-500.png';
@@ -19,9 +20,9 @@ const Footer = () => {
           <Grid item xs={12} md={4} className={styles.centerColumn}>
             <Typography variant='h4' className={styles.footerHeading}>Links</Typography>
             <Stack direction='row'>
-              <RouteLink to='/' className={styles.footerLink}>Home</RouteLink>
-              <RouteLink to='/#' className={styles.footerLink}>Starchart</RouteLink>
-              <RouteLink to='/faq' className={styles.footerLink}>Faqs</RouteLink>
+              <NavLink to='/' end className={styles.footerLink}>Home</NavLink>
+              <HashLink to='/#starchart' className={styles.footerLink}>Starchart</HashLink>
+              <NavLink to='/faq' className={styles.footerLink}>Faqs</NavLink>
             </Stack>
           </Grid>
 
