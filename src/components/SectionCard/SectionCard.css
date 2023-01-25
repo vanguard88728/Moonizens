@@ -1,0 +1,44 @@
+.section-card {
+    position: sticky;
+    top: 0;
+    min-height: 500px;
+    margin-bottom: 6em;
+    padding: 5em 3.625em;
+    justify-content: space-between;
+    grid-column-gap: 4em;
+    grid-row-gap: 4em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(71, 195, 193, 0.31);
+    border-radius: 60px 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.88), rgba(30, 30, 30, 0.01)), url('../../assets/images/card-blank.jpg');
+    background-position: 0 0, 0 0;
+    background-size: auto, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    box-shadow: 0 0 40px -10px rgba(71, 195, 193, 0.63);
+}
+
+.section-card-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 40px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #47c3c1;
+    border-radius: 60px 0;
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
