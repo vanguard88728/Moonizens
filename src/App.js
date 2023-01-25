@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CssBaseline, StyledEngineProvider, ThemeProvider } from "@mui/material";
 
@@ -10,8 +10,7 @@ import './App.css';
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
-  const { customTheme } = useCustomTheme(darkMode);
+  const { customTheme } = useCustomTheme();
 
   return (
     <StyledEngineProvider injectFirst>
