@@ -10,80 +10,12 @@
   grid-column-gap: 16px;
 }
 
-.navbar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  padding: 20px 0px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #000;
-}
 
-.brand {
-  -webkit-box-ordinal-group: 0;
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
 
-.nav-menu {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
 
-.nav-link {
-  margin-right: 15px;
-  margin-left: 15px;
-  padding: 5px 0px;
-  border-bottom: 2px solid #000;
-  font-family: Rodiopen, sans-serif;
-  color: #fff;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-  text-decoration: none;
-}
 
-.nav-link:hover {
-  border-bottom: 2px solid #47c3c1;
-}
 
-.nav-link:focus-visible {
-  border-radius: 4px;
-  outline-color: #0050bd;
-  outline-offset: 0px;
-  outline-style: solid;
-  outline-width: 2px;
-  color: #0050bd;
-}
 
-.nav-link[data-wf-focus-visible] {
-  border-radius: 4px;
-  outline-color: #0050bd;
-  outline-offset: 0px;
-  outline-style: solid;
-  outline-width: 2px;
-  color: #0050bd;
-}
-
-.nav-link.w--current {
-  border-bottom-color: #47c3c1;
-  color: rgba(188, 188, 189, 0.75);
-}
 
 .bnr-text {
   width: 750px;
@@ -222,21 +154,7 @@
   text-decoration: none;
 }
 
-.social-icon-link {
-  width: 22px;
-  margin-left: 20px;
-}
 
-.social-icon-link:hover {
-  opacity: 0.7;
-}
-
-.container.nav-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
 
 .interior-heading {
   margin-top: 0px;
@@ -1178,16 +1096,6 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.logo-image {
-  width: 250px;
-  -webkit-transition: opacity 300ms ease;
-  transition: opacity 300ms ease;
-}
-
-.logo-image:hover {
-  opacity: 0.6;
-}
-
 .team-sub-name {
   font-family: Jura, sans-serif;
   color: #fff;
@@ -1239,23 +1147,8 @@
 }
 
 @media screen and (max-width: 991px) {
-  .nav-menu {
-    padding: 30px 40px;
-    background-color: #131010;
-  }
 
-  .nav-menu.scl-icons {
-    display: none;
-  }
 
-  .nav-menu.scl-icons.nav-scl {
-    display: none;
-  }
-
-  .nav-link {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
 
   .bnr-text {
     width: 100%;
@@ -1353,13 +1246,7 @@
     color: #fff;
   }
 
-  .menu-button {
-    background-color: #131010;
-  }
 
-  .menu-button.w--open {
-    background-color: #131010;
-  }
 
   .inner-page-wrapper {
     padding-top: 30px;
@@ -1488,12 +1375,6 @@
 @media screen and (max-width: 767px) {
   p {
     font-size: 16px;
-  }
-
-  .nav-link {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .bnr-text {
@@ -1660,14 +1541,7 @@
     line-height: 22px;
   }
 
-  .brand {
-    padding-left: 0px;
-  }
 
-  .nav-link {
-    font-size: 16px;
-    line-height: 13px;
-  }
 
   .bnr-text {
     margin-bottom: 40px;

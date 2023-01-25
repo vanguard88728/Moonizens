@@ -1,0 +1,128 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+
+.container.nav-container {
+    display: flex;
+}
+
+.brand {
+    order: -1;
+}
+
+.logo {
+    width: 250px;
+    transition: opacity 300ms ease;
+}
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+.navMenu {
+    order: 1;
+}
+
+.navLink {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 5px 0;
+    border-bottom: 2px solid #000;
+    font-family: Rodiopen, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.015625rem;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    border-bottom: 2px solid #47c3c1;
+}
+
+.navLink:focus-visible {
+    border-radius: 4px;
+    outline-offset: 0;
+    outline: #0050bd solid 2px;
+    color: #0050bd;
+}
+
+.navLink[data-wf-focus-visible] {
+    border-radius: 4px;
+    outline-offset: 0;
+    outline: #0050bd solid 2px;
+    color: #0050bd;
+}
+
+.navLink.w--current {
+    border-bottom-color: #47c3c1;
+    color: rgba(188, 188, 189, 0.75);
+}
+
+.socialIconLink {
+    width: 22px;
+    margin-left: 20px;
+}
+
+.socialIconLink:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 991px) {
+    .navMenu {
+        padding: 30px 40px;
+        background-color: #131010;
+    }
+
+    .navMenu.socialIcons {
+        display: none;
+    }
+
+    .navMenu.socialIcons.navSocial {
+        display: none;
+    }
+
+    .navLink {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .navSocial {
+        display: none !important;
+    }
+
+    .menuButton {
+        background-color: #131010;
+    }
+
+    .menuButton.w--open {
+        background-color: #131010;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navLink {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .brand {
+        padding-left: 0;
+    }
+
+    .navLink {
+        font-size: 16px;
+        line-height: 13px;
+    }
+}
+
