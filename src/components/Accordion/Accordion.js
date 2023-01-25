@@ -29,7 +29,7 @@ const Accordion = ({ heading, details }) => {
       <div className={clsx('accordion-content', { expanded })}>
         <div className="accordion-content-block">
           <div className="right-content">
-            <Typography className="faq-content">{details}</Typography>
+            <Typography className="faq-content" dangerouslySetInnerHTML={{ __html: details }} />
           </div>
         </div>
       </div>
