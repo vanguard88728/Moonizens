@@ -11,7 +11,7 @@ import Twitter from '../../assets/images/twitter.svg';
 const Footer = () => {
   return (
     <Box className={styles.footerSection}>
-      <Box className={styles.container}>
+      <Box className="container">
         <Grid container spacing={2}>
           <Grid item xs={12} md={4} className={styles.leftColumn}>
             <img src={Logo} alt='' loading='lazy' height={33} />
