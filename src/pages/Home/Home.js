@@ -19,6 +19,7 @@ import TeamLeet from '../../assets/images/team-leet.png';
 import TeamLeet500 from '../../assets/images/team-leet-p-500.png';
 import Twitter from '../../assets/images/twitter.svg';
 import ScrollingItem from '../../components/ScrollingItem/ScrollingItem';
+import CollectionSlider from '../../components/CollectionSlider/CollectionSlider';
 
 const Home = () => {
 
@@ -196,6 +197,8 @@ const Home = () => {
         </div>
         <div className="section-background"></div>
       </section>
+
+      <CollectionSlider />
 
       <div id="starchart" className="section wf-section">
         <div data-w-id="c9238721-1749-2edb-af42-222640485fd2" className="planets-wrapper expand">
