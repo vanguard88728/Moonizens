@@ -149,6 +149,99 @@
     background-image: linear-gradient(180deg, transparent 37%, #000);
 }
 
+.section {
+    position: relative;
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+.section.remove-top-padding {
+    padding-top: 0;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.grid-team {
+    position: relative;
+    z-index: 10;
+    padding-right: 24px;
+    padding-left: 24px;
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+}
+
+.team-pic {
+    position: relative;
+}
+
+.team-image {
+    display: block;
+}
+
+.team-name {
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #000;
+    box-shadow: 0 0 40px -10px rgba(71, 195, 193, 0.63);
+    font-family: Rodiopen, sans-serif;
+    color: #47c3c1;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.team-twitter-wrap {
+    display: flex;
+    margin-top: 3px;
+    justify-content: center;
+    align-items: center;
+    font-family: Jura, sans-serif;
+    color: #47c3c1;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.team-twitter-wrap:hover {
+    text-decoration: underline;
+}
+
+.team-twitter {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.team-sub-name {
+    font-family: Jura, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    display: block;
+    background-image: linear-gradient(180deg, #000 50%, rgba(0, 45, 48, 0.7));
+}
+
 .image-section {
     display: flex;
     min-height: 900px;
@@ -217,6 +310,15 @@
         right: auto;
         order: -1;
     }
+
+    .section.remove-top-padding {
+        padding-top: 3em;
+    }
+
+    .grid-team {
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -244,6 +346,31 @@
 
     .hero-nft {
         width: 40vw;
+    }
+
+    .team-pic {
+        width: 45%;
+    }
+
+    .grid-team {
+        display: flex;
+        padding-right: 0;
+        padding-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-name {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .team-sub-name {
+        font-size: 12px;
     }
 }
 
@@ -297,4 +424,19 @@
     .hero-nft {
         width: 60vw;
     }
+
+    .grid-team {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .team-pic {
+        width: 100%;
+    }
+
+    .team-name {
+        margin-top: -8px;
+        line-height: 18px;
+    }
+
 }

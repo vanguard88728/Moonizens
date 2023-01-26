@@ -18,6 +18,30 @@
     box-shadow: 0 0 40px -10px rgba(71, 195, 193, 0.63);
 }
 
+.section-card.card-1 {
+    top: 8em;
+}
+
+.section-card.card-2 {
+    top: 12em;
+}
+
+.section-card.card-3 {
+    top: 16em;
+}
+
+.section-card.card-4 {
+    top: 20em;
+}
+
+.section-card.card-5 {
+    top: 24em;
+}
+
+.section-card.card-6 {
+    top: 28em;
+}
+
 .section-card-border {
     position: absolute;
     left: 0;
@@ -31,14 +55,96 @@
     border-radius: 60px 0;
 }
 
+.section-card-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    padding-right: 24px;
+    padding-left: 24px;
+    justify-content: space-between;
+}
+
+.card-left {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.card-right {
+    display: flex;
+    width: 400px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-right-image {
+    width: 75%;
+}
+
+.card-right-image.reduce-opacity {
+    opacity: 0.5;
+}
+
 @media screen and (max-width: 991px) {
+    .section-card {
+        position: relative;
+        margin-bottom: 3em;
+    }
+
+    .section-card.card-1, .section-card.card-2, .section-card.card-3,
+    .section-card.card-4, .section-card.card-5, .section-card.card-6 {
+        top: auto;
+    }
+
+    .section-card-content {
+        flex-direction: column-reverse;
+    }
+
+    .card-left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-right {
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .card-right-image {
+        width: 200px;
+    }
 
 }
 
 @media screen and (max-width: 767px) {
+    .section-card-border {
+        border-width: 2px;
+    }
 
+    .card-right-image {
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 479px) {
+    .section-card {
+        padding: 3em 2em;
+    }
 
+    .section-card-border {
+        margin: 20px;
+    }
+
+    .section-card-content {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .card-right-image {
+        width: 125px;
+    }
 }
