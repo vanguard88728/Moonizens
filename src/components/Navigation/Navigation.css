@@ -61,7 +61,7 @@
     color: #0050bd;
 }
 
-.navLink.active {
+.navLink.active, .navLink.w--current {
     border-bottom-color: #47c3c1;
     color: rgba(188, 188, 189, 0.75);
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Link, Typography } from '@mui/material';
+import { Grid, Link, Typography } from '@mui/material';
 import SectionCard from '../../components/SectionCard/SectionCard';
 import './Home.css';
 
@@ -18,11 +18,12 @@ import TeamMega500 from '../../assets/images/team-mega-p-500.png';
 import TeamLeet from '../../assets/images/team-leet.png';
 import TeamLeet500 from '../../assets/images/team-leet-p-500.png';
 import Twitter from '../../assets/images/twitter.svg';
+import ScrollingItem from '../../components/ScrollingItem/ScrollingItem';
 
 const Home = () => {
 
   return (
-    <Box>
+    <div className="page-wrapper">
       <section id='home' className="hero-section">
         <div className="container w-container">
           <div className="hero-block">
@@ -196,6 +197,55 @@ const Home = () => {
         <div className="section-background"></div>
       </section>
 
+      <div id="starchart" className="section wf-section">
+        <div data-w-id="c9238721-1749-2edb-af42-222640485fd2" className="planets-wrapper expand">
+          <div className="section-heading-wrapper">
+            <Typography variant='h2' className="section-card-heading mob-larger">Star Chart</Typography>
+          </div>
+          <div className="planets-container sticky">
+            <div className="wrapper">
+              <div className="scrolling-content">
+                <div className="_w-scrolling-content">
+                  <div className="c-scroll-track">
+                    <ScrollingItem
+                      heading='Star 1'
+                      details='Invasion begins Moonizens: Genesis digital collectible assets will mint on the Ethereum Blockchain.'
+                    />
+                    <ScrollingItem
+                      heading='Star 2'
+                      details='Introduction to The Moonizens lore and Mechanics.'
+                    />
+                    <ScrollingItem
+                      heading='Star 3'
+                      details='Grant Individuals exclusive access private discord, events and more.'
+                    />
+                    <ScrollingItem
+                      heading='Star 4'
+                      details='Begin Deployment of rewards to Holders.'
+                    />
+                    <ScrollingItem
+                      heading='Star 5'
+                      details='Launch Official Moonizens store.'
+                    />
+                    <ScrollingItem
+                      heading='Star 6'
+                      details='Release of The Moonizens: The Sun, The Moon, The Truth Book.'
+                    />
+                    <ScrollingItem
+                      isLast={true}
+                      heading='Star 7'
+                      details='Moonizen Studios established as a Web3 entity.'
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="section-background reverse"></div>
+        <div className="bottom-gradient-2"></div>
+      </div>
+
       <div className="image-section">
         <div className="container w-container">
           <Grid container spacing={2}>
@@ -216,7 +266,7 @@ const Home = () => {
           </Grid>
         </div>
       </div>
-    </Box>
+    </div>
   );
 };
 

@@ -1,0 +1,51 @@
+.c-scrolling-item {
+    width: 15%;
+    flex: 0 0 auto;
+}
+
+.c-scrolling-line {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.scroll-indicator {
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.scroll-line {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(52, 52, 52, 0.65);
+}
+
+.scroll-line.last {
+    background-color: rgba(52, 52, 52, 0);
+}
+
+.c-scrolling-details {
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.scroll-item-header {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Rodiopen, sans-serif;
+    color: #47c3c1;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.scroll-details {
+    margin-bottom: 0;
+}

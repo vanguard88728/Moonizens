@@ -180,172 +180,13 @@
   padding-bottom: 50px;
 }
 
-.page-wrapper {
-  width: 100%;
-}
-
-.section-background.reverse {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #000), to(rgba(0, 45, 48, 0.7)));
-  background-image: linear-gradient(0deg, #000 50%, rgba(0, 45, 48, 0.7));
-}
-
-.section-heading-wrapper {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.bottom-gradient-2 {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  z-index: -1;
-  min-height: 500px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#002e30));
-  background-image: linear-gradient(180deg, #000, #002e30);
-}
-
 ._2-column-grid {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
 
-.c-scrolling-item {
-  width: 15%;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
 
-.scroll-item-header {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-family: Rodiopen, sans-serif;
-  color: #47c3c1;
-  font-size: 18px;
-  line-height: 1.4em;
-  font-weight: 400;
-}
 
-.scroll-details {
-  margin-bottom: 0px;
-}
-
-.planets-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 20px 0px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.planets-container.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 25%;
-  overflow: hidden;
-  max-width: none;
-  margin-bottom: 20px;
-}
-
-.c-scroll-track {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 200vh;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-._w-scrolling-content {
-  position: relative;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-.c-scrolling-line {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.planets-wrapper {
-  display: block;
-  width: 100vw;
-  height: auto;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.planets-wrapper.expand {
-  height: 200vh;
-}
-
-.scroll-indicator {
-  width: 200px;
-  height: auto;
-  border-radius: 100%;
-}
-
-.scroll-line {
-  width: 100%;
-  height: 3px;
-  background-color: rgba(52, 52, 52, 0.65);
-}
-
-.scroll-line.last {
-  background-color: rgba(52, 52, 52, 0);
-}
-
-.c-scrolling-details {
-  padding-top: 20px;
-  padding-right: 60px;
-  padding-bottom: 20px;
-}
 
 .slide-image {
   -webkit-transition: opacity 300ms ease;
@@ -433,26 +274,8 @@
     color: #fff;
   }
 
-  .planets-container {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
 
-  .planets-container.sticky {
-    position: relative;
-    top: 0%;
-    overflow: auto;
-  }
 
-  .wrapper {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
-  .planets-wrapper.expand {
-    overflow: hidden;
-    height: auto;
-  }
 
   .lottie-wrapper {
     display: none;
@@ -512,10 +335,6 @@
     min-height: 700px;
   }
 
-  .section-background.reverse {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #000), to(rgba(0, 45, 48, 0.7)));
-    background-image: linear-gradient(0deg, #000 80%, rgba(0, 45, 48, 0.7));
-  }
 
   ._2-column-grid {
     -ms-grid-columns: 1fr;
@@ -556,9 +375,6 @@
     padding-bottom: 26px;
   }
 
-  .section-card-heading.mob-larger {
-    font-size: 30px;
-  }
 
   .lottie-wrapper {
     bottom: -60px;
