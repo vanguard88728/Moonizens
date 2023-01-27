@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Typography } from '@mui/material';
-import { motion, useMotionValue, useScroll } from 'framer-motion';
+import { motion, useMotionValue, useScroll, useSpring } from 'framer-motion';
 
 import './StarChart.css';
 import ScrollingItem from '../ScrollingItem/ScrollingItem';
@@ -12,11 +12,11 @@ const StarChart = () => {
     target: ref,
     offset: ['start', 'end end']
   });
-  const x = useMotionValue(0);
+  const x = useSpring(0, { stiffness: 50, damping: 10 });
 
   useEffect(() => {
     scrollYProgress.onChange(value => {
-      const newOffset = -0.5 * window.innerWidth * value;
+      const newOffset = -2 * window.innerHeight * value;
       x.set(newOffset);
     })
   }, [])
@@ -30,7 +30,7 @@ const StarChart = () => {
         <div className="planets-container sticky">
           <div className="wrapper">
             <div className="_w-scrolling-content">
-              <motion.div className="c-scroll-track" style={{ x }} transition={{ type: 'spring', stiffness: 100 }}>
+              <motion.div className="c-scroll-track" style={{ x }}>
                 <ScrollingItem
                   heading='Star 1'
                   details='Invasion begins Moonizens: Genesis digital collectible assets will mint on the Ethereum Blockchain.'
