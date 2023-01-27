@@ -80,7 +80,6 @@ const CollectionSlider = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = (index) => {
-    console.log('INDEX', index);
     setCurrentIndex(index);
     setOpen(true);
   }

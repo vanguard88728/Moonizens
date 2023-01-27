@@ -12,10 +12,7 @@ const SectionCard = ({ cardClassName, children }) => {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{
-        default: {
-          duration: 1,
-          ease: [0.76, 0, 0.24, 1]
-        }
+        duration: 0.3
       }}
     >
       <div className="section-card-border"></div>

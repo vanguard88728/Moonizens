@@ -21,6 +21,7 @@ import Twitter from '../../assets/images/twitter.svg';
 import ScrollingItem from '../../components/ScrollingItem/ScrollingItem';
 import CollectionSlider from '../../components/CollectionSlider/CollectionSlider';
 import StarChart from '../../components/StarChart/StarChart';
+import TeamPicture from '../../components/TeamPicture/TeamPicture';
 
 const Home = () => {
 
@@ -150,48 +151,27 @@ const Home = () => {
                 <Typography variant='h2' className="section-card-heading">Co-Founders</Typography>
               </div>
               <div className="w-layout-grid grid-team">
-                <div className="team-pic">
-                  <img src={TeamSpook} loading='lazy' alt='' className="team-image"
-                       srcSet={`${TeamSpook500} 500w, ${TeamSpook} 600w`}
-                       sizes="(max-width: 497px) 80vw, (max-width: 991px) 71vw, 600px" />
-                  <div className="team-name">
-                    <div>Spook</div>
-                    <div className="team-sub-name">Founder / Artist</div>
-                    <Link href='https://twitter.com/spookmoonizens' target='_blank' rel='nofollow'
-                          className="team-twitter-wrap w-inline-block">
-                      <img src={Twitter} loading='lazy' alt='' className="team-twitter" />
-                      <div>@SpookMoonizens<br/></div>
-                    </Link>
-                  </div>
-                </div>
-                <div className="team-pic">
-                  <img src={TeamMega} loading='lazy' alt='' className="team-image"
-                       srcSet={`${TeamMega500} 500w, ${TeamMega} 600w`}
-                       sizes="(max-width: 497px) 80vw, (max-width: 991px) 71vw, 600px" />
-                  <div className="team-name">
-                    <div>Mega</div>
-                    <div className="team-sub-name">Co-Founder / COO</div>
-                    <Link href='https://twitter.com/defeateroffiat' target='_blank' rel='nofollow'
-                          className="team-twitter-wrap w-inline-block">
-                      <img src={Twitter} loading='lazy' alt='' className="team-twitter" />
-                      <div>@DefeaterOfFiat<br/></div>
-                    </Link>
-                  </div>
-                </div>
-                <div className="team-pic">
-                  <img src={TeamLeet} loading='lazy' alt='' className="team-image"
-                       srcSet={`${TeamLeet500} 500w, ${TeamLeet} 600w`}
-                       sizes="(max-width: 497px) 80vw, (max-width: 991px) 71vw, 600px" />
-                  <div className="team-name">
-                    <div>Leet</div>
-                    <div className="team-sub-name">Co-Founder / Cto</div>
-                    <Link href='https://twitter.com/leetcoins' target='_blank' rel='nofollow'
-                          className="team-twitter-wrap w-inline-block">
-                      <img src={Twitter} loading='lazy' alt='' className="team-twitter" />
-                      <div>@LeetCoins<br/></div>
-                    </Link>
-                  </div>
-                </div>
+                <TeamPicture
+                  original={TeamSpook}
+                  thumbnail={TeamSpook500}
+                  name='Spook'
+                  role='Founder / Artist'
+                  id='@SpookMoonizens'
+                />
+                <TeamPicture
+                  original={TeamMega}
+                  thumbnail={TeamMega500}
+                  name='Mega'
+                  role='Co-Founder / COO'
+                  id='@DefeaterOfFiat'
+                />
+                <TeamPicture
+                  original={TeamLeet}
+                  thumbnail={TeamLeet500}
+                  name='Leet'
+                  role='Co-Founder / CTO'
+                  id='@LeetCoins'
+                />
               </div>
             </SectionCard>
           </div>
