@@ -1,7 +1,11 @@
 import React from "react";
-import { Grid, Link, Typography } from '@mui/material';
-import SectionCard from '../../components/SectionCard/SectionCard';
+import { Grid, Typography } from '@mui/material';
+import 'animate.css';
 import './Home.css';
+import SectionCard from '../../components/SectionCard/SectionCard';
+import CollectionSlider from '../../components/CollectionSlider/CollectionSlider';
+import StarChart from '../../components/StarChart/StarChart';
+import TeamPicture from '../../components/TeamPicture/TeamPicture';
 
 import HeroNft from '../../assets/images/hero-nft.png';
 import HeroNft500 from '../../assets/images/hero-nft-p-500.png';
@@ -17,11 +21,7 @@ import TeamMega from '../../assets/images/team-mega.png';
 import TeamMega500 from '../../assets/images/team-mega-p-500.png';
 import TeamLeet from '../../assets/images/team-leet.png';
 import TeamLeet500 from '../../assets/images/team-leet-p-500.png';
-import Twitter from '../../assets/images/twitter.svg';
-import ScrollingItem from '../../components/ScrollingItem/ScrollingItem';
-import CollectionSlider from '../../components/CollectionSlider/CollectionSlider';
-import StarChart from '../../components/StarChart/StarChart';
-import TeamPicture from '../../components/TeamPicture/TeamPicture';
+
 
 const Home = () => {
 
@@ -31,13 +31,15 @@ const Home = () => {
         <div className="container w-container">
           <div className="hero-block">
             <div className="bnr-text">
-              <Typography variant='h1' className="hero-heading">Moonizens</Typography>
-              <Typography component='p' className="hero-sub-paragraph">
+              <Typography variant='h1' className="hero-heading animate__animated animate__rubberBand">
+                Moonizens
+              </Typography>
+              <Typography component='p' className="hero-sub-paragraph animate__animated animate__fadeInUp">
                 A revolutionary Science-Fiction Art Experience with Universal Utility
               </Typography>
             </div>
             <div className="hero-design-1">
-              <div className="button-wrapper">
+              <div className="button-wrapper animate__animated animate__flipInX">
                 <a href="#" className="button text-button w-inline-block">
                   <div>Mint</div>
                   <div className="button-note">Coming Soon</div>
@@ -55,7 +57,8 @@ const Home = () => {
           </video>
           <div className="hero-video-overlay"></div>
         </div>
-        <img src={HeroNft} loading="lazy" alt='' className="hero-nft"
+        <img src={HeroNft} loading="lazy" alt=''
+             className="hero-nft animate__animated animate__bounceIn"
              srcSet={`${HeroNft500} 500w, ${HeroNft} 850w`}
              sizes='(max-width: 479px) 60vw, (max-width: 767px) 40vw, 35vw' />
         <div className="bottom-gradient"></div>

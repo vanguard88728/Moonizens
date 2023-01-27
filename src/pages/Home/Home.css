@@ -1,3 +1,13 @@
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Space age', sans-serif;
+    color: #fff;
+    font-size: 96px;
+    line-height: 80px;
+    font-weight: 400;
+}
+
 .page-wrapper {
     width: 100%;
 }
