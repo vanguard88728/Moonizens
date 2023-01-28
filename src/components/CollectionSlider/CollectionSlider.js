@@ -63,11 +63,11 @@ const CustomRightArrow = ({ onClick }) => (
   </div>
 )
 
-const LeftNav = ({ onClick }) => (
+const LeftNav = (onClick) => (
   <div className="w-lightbox-control w-lightbox-left" onClick={onClick} />
 )
 
-const RightNav = ({ onClick }) => (
+const RightNav = (onClick) => (
   <div className="w-lightbox-control w-lightbox-right" onClick={onClick} />
 )
 
